@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margem_top">32dp</dimen>
+    <dimen name="margem_lateral">16dp</dimen>
+    <dimen name="margem_entre_views">8dp</dimen>
+    <dimen name="texto_heading">36sp</dimen>
+    <dimen name="tam_botao">120dp</dimen>
+</resources>

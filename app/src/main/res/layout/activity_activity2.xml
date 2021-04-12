@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/purple_200"
+            android:orientation="vertical"
+            tools:context=".ActivityAcao2">
+
+
+            <EditText
+                android:id="@+id/NomedoLivro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Nome do Livro: "
+                app:layout_constraintBottom_toTopOf="@+id/NomedoAutor"
+                app:layout_constraintTop_toBottomOf="@+id/space3"
+                app:layout_constraintVertical_bias="1.0"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <EditText
+                android:id="@+id/NomedoAutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Nome do Autor: "
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <EditText
+                android:id="@+id/Ano"
+                android:layout_width="405dp"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:inputType="number"
+                android:text="Ano: "
+                app:layout_constraintStart_toStartOf="@+id/autorEditText"
+                app:layout_constraintTop_toBottomOf="@+id/NomedoAutor" />
+
+            <RatingBar
+                android:id="@+id/Nota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rating="3.0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.59"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Ano" />
+
+            <Button
+                android:id="@+id/salvar"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="388dp"
+                android:layout_height="43dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="160dp"
+                android:text="@string/salvar"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.695"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Nota" />
+
+            <Button
+                android:id="@+id/cancelar2"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="24dp"
+                android:text="@string/cancelar2"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/salvar" />
+
+
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
